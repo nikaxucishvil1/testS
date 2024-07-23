@@ -4,16 +4,16 @@ const useContextHook = () => {
   const context = useAppContext();
   if (!context) return;
 
-  const { state, sum } = context;
+  const { linksArr, setLinkArr } = context;
 
   return {
-    state,
-    sum,
+    linksArr,
+    setLinkArr,
   };
 };
 
 export default useContextHook;
-// use
+// useage
 // const context = useContextHook();
 // if (!context) {
 //   return (
